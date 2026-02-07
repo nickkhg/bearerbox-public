@@ -10,8 +10,8 @@
     --text-primary: rgba(255, 255, 255, 0.92);
     --text-secondary: rgba(255, 255, 255, 0.5);
     --text-heading: #FFFFFF;
-    --gold-start: #F5A10D;
-    --gold-end: #EB580F;
+    --gold-start: #F59E0B;
+    --gold-end: #EA580C;
     --blue: #007AFF;
     --blue-hover: #3395FF;
     --border: rgba(255, 255, 255, 0.1);
@@ -40,7 +40,7 @@ body {
 }
 
 ::selection {
-    background: rgba(245, 161, 13, 0.3);
+    background: rgba(245, 158, 11, 0.3);
     color: #fff;
 }
 
@@ -101,16 +101,10 @@ nav a.active {
     padding: 5rem 0 3rem;
 }
 
-.hero-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    display: block;
-    font-family: var(--font-mono);
-    font-weight: 300;
-    background: linear-gradient(135deg, var(--gold-start), var(--gold-end));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.hero-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1.25rem;
 }
 
 .hero h1 {
