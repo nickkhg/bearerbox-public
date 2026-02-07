@@ -4,24 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BearerBox - Privacy Policy</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; line-height: 1.6; }
-        nav { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 1rem 2rem; display: flex; align-items: center; gap: 2rem; }
-        nav a { text-decoration: none; color: #555; font-size: 0.95rem; }
-        nav a:hover { color: #000; }
-        nav .brand { font-weight: 700; font-size: 1.2rem; color: #000; }
-        .container { max-width: 720px; margin: 3rem auto; padding: 0 1.5rem; }
-        h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-        h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.75rem; }
-        p { margin-bottom: 1rem; color: #444; }
-        .last-updated { color: #888; font-size: 0.9rem; margin-bottom: 2rem; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <a class="brand" href="index.html">BearerBox</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
+        <a class="active" href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
     </nav>
     <div class="container">
@@ -34,14 +22,14 @@
 
         <h2>Data Collection</h2>
         <p>BearerBox does not collect any data whatsoever. Specifically, BearerBox:</p>
-        <p>
+        <div class="list-block">
             &bull; Does not collect analytics, telemetry, or usage data<br>
             &bull; Does not use cookies or tracking technologies<br>
             &bull; Does not send any data to external servers<br>
             &bull; Does not access your browsing history<br>
             &bull; Does not collect personal information of any kind<br>
             &bull; Does not use any third-party analytics or advertising SDKs
-        </p>
+        </div>
 
         <h2>How BearerBox Works</h2>
         <p>BearerBox operates entirely within your browser. When you open the extension popup, it reads session storage and local storage from the active tab so you can inspect their contents. If a storage value contains a JWT token, BearerBox decodes it locally using standard Base64 decoding &mdash; no network requests are made.</p>
@@ -49,11 +37,11 @@
 
         <h2>Safari Extension Permissions</h2>
         <p>BearerBox requests only the minimum permissions needed to function:</p>
-        <p>
+        <div class="list-block">
             &bull; <strong>Active tab access</strong> &mdash; to read storage values from the page you are currently viewing<br>
             &bull; <strong>Scripting</strong> &mdash; to execute your custom actions on the current page<br>
             &bull; <strong>Extension storage</strong> &mdash; to save your custom actions locally on your device
-        </p>
+        </div>
         <p>BearerBox never runs in the background and only activates when you explicitly click the toolbar icon.</p>
 
         <h2>Third-Party Services</h2>
@@ -67,6 +55,10 @@
 
         <h2>Contact</h2>
         <p>If you have questions about this privacy policy, please reach out at <a href="mailto:hagiionutnichi@gmail.com">hagiionutnichi@gmail.com</a>.</p>
+
+        <div class="footer">
+            &copy; 2026 Nick Hagiu &middot; <a href="index.html">Back to home</a>
+        </div>
     </div>
 </body>
 </html>

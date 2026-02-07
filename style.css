@@ -1,0 +1,303 @@
+/* BearerBox Legal Pages — Dark Navy Developer Theme */
+/* Matches BearerBox app brand: dark slate/navy gradient with gold accents */
+
+:root {
+    --bg-gradient-start: #2B3544;
+    --bg-gradient-end: #171D27;
+    --bg-surface: rgba(255, 255, 255, 0.04);
+    --bg-surface-hover: rgba(255, 255, 255, 0.07);
+    --bg-surface-border: rgba(255, 255, 255, 0.08);
+    --text-primary: rgba(255, 255, 255, 0.92);
+    --text-secondary: rgba(255, 255, 255, 0.5);
+    --text-heading: #FFFFFF;
+    --gold-start: #F5A10D;
+    --gold-end: #EB580F;
+    --blue: #007AFF;
+    --blue-hover: #3395FF;
+    --border: rgba(255, 255, 255, 0.1);
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "SF Mono", SFMono-Regular, Menlo, monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    background: linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    background-attachment: fixed;
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+::selection {
+    background: rgba(245, 161, 13, 0.3);
+    color: #fff;
+}
+
+/* ── Navigation ── */
+
+nav {
+    background: rgba(23, 29, 39, 0.75);
+    border-bottom: 1px solid var(--border);
+    padding: 0.875rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(20px) saturate(1.2);
+    -webkit-backdrop-filter: blur(20px) saturate(1.2);
+}
+
+nav .brand {
+    font-weight: 700;
+    font-size: 1.15rem;
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--gold-start), var(--gold-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.01em;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    transition: color 0.15s ease;
+}
+
+nav a:hover {
+    color: var(--text-primary);
+}
+
+nav a.active {
+    color: var(--text-primary);
+}
+
+/* ── Main Content ── */
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+}
+
+/* ── Index Page ── */
+
+.hero {
+    text-align: center;
+    padding: 5rem 0 3rem;
+}
+
+.hero-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    font-family: var(--font-mono);
+    font-weight: 300;
+    background: linear-gradient(135deg, var(--gold-start), var(--gold-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.03em;
+}
+
+.hero p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.doc-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.doc-card {
+    display: block;
+    background: var(--bg-surface);
+    border: 1px solid var(--bg-surface-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.doc-card:hover {
+    background: var(--bg-surface-hover);
+    border-color: rgba(255, 255, 255, 0.14);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.doc-card .card-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.doc-card .card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-heading);
+    margin-bottom: 0.35rem;
+}
+
+.doc-card .card-desc {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* ── Document Pages ── */
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    margin-bottom: 0.35rem;
+    letter-spacing: -0.02em;
+}
+
+.last-updated {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: linear-gradient(135deg, var(--gold-start), var(--gold-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    font-size: 0.925rem;
+    line-height: 1.7;
+}
+
+strong {
+    color: var(--text-heading);
+    font-weight: 600;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    color: var(--blue-hover);
+    text-decoration: underline;
+}
+
+/* ── List Blocks ── */
+
+.list-block {
+    background: var(--bg-surface);
+    border: 1px solid var(--bg-surface-border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.9;
+    color: var(--text-primary);
+}
+
+/* ── Code-style inline elements ── */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    background: var(--bg-surface);
+    border: 1px solid var(--bg-surface-border);
+    border-radius: 4px;
+    padding: 0.15em 0.45em;
+    color: var(--gold-start);
+}
+
+/* ── Footer ── */
+
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border-subtle);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.footer a {
+    color: var(--text-secondary);
+    transition: color 0.15s ease;
+}
+
+.footer a:hover {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 540px) {
+    nav {
+        padding: 0.75rem 1rem;
+        gap: 1.25rem;
+    }
+
+    .container {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .hero {
+        padding: 3rem 0 2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .doc-cards {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
